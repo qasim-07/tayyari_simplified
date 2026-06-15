@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply selection:bg-brand-gold/30 selection:text-brand-navy;
+  }
+
+  /* Custom focus style for a11y */
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-gold ring-offset-2;
+  }
+}
+
+@layer utilities {
+  /* Dynamic backdrop filter for premium glassmorphism styling */
+  .glass-header {
+    backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+  
+  .glass-header-dark {
+    backdrop-filter: blur(12px);
+    background-color: rgba(8, 27, 51, 0.85);
+  }
+
+  /* Smooth custom transition duration variables */
+  .transition-brand {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
+}
+
+/* Custom fine-scrollbar for modern UI layouts */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-brand-navy/20 rounded-full hover:bg-brand-navy/40 transition-colors;
+}
