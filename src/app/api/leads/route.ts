@@ -3,7 +3,13 @@ import { promises as fs } from "fs";
 import path from "path";
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const LEADS_FILE = path.join(process.cwd(), "data", "leads.json");
+
+// In serverless environments like Vercel, the root filesystem is read-only.
+// We fallback to '/tmp' to prevent EROFS write errors during deployments.
+const isServerless = !!(process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_VERSION || process.env.NETLIFY);
+const LEADS_FILE = isServerless
+  ? path.join("/tmp", "leads.json")
+  : path.join(process.cwd(), "data", "leads.json");
 
 interface LeadEntry {
   email: string;
@@ -61,7 +67,8 @@ export async function POST(request: NextRequest) {
       success: true,
       message: "You're all set! Your download is ready.",
     });
-  } catch {
+  } catch (error) {
+    console.error("Error saving lead:", error);
     return NextResponse.json(
       { success: false, message: "Unable to save your details. Please try again." },
       { status: 500 }
