@@ -86,40 +86,28 @@ export const CATEGORIES: CategoryMeta[] = [
 
 export const RESOURCES: Resource[] = [
   {
-    slug: "indian-polity-fundamentals",
-    title: "Indian Polity Fundamentals",
+    slug: "geography-notes",
+    title: "Geography Comprehensive Notes",
     description:
-      "Constitution, Parliament, Judiciary, and federal structure — distilled for prelims.",
+      "Complete geography concepts, physical geography, mapping, and Indian atlas for UPSC.",
     category: "pdf-notes",
-    filePath: "/pdfs/pdf-notes/indian-polity-fundamentals.pdf",
-    fileSize: "1.2 MB",
-    pages: 48,
-    updatedAt: "2024-05-10",
-    tags: ["Polity", "Prelims", "GS-II"],
-  },
-  {
-    slug: "modern-indian-history-crux",
-    title: "Modern Indian History Crux",
-    description:
-      "Freedom struggle timeline, reform movements, and key personalities in one sheet.",
-    category: "pdf-notes",
-    filePath: "/pdfs/pdf-notes/modern-indian-history-crux.pdf",
-    fileSize: "980 KB",
-    pages: 36,
-    updatedAt: "2024-05-08",
-    tags: ["History", "Prelims", "GS-I"],
-  },
-  {
-    slug: "geography-india-atlas",
-    title: "Geography India Atlas",
-    description:
-      "Physical features, climate, rivers, and agriculture — map-based prelims prep.",
-    category: "pdf-notes",
-    filePath: "/pdfs/pdf-notes/geography-india-atlas.pdf",
-    fileSize: "1.5 MB",
-    pages: 52,
-    updatedAt: "2024-05-05",
+    filePath: "/pdfs/pdf-notes/Geography in pdf.pdf",
+    fileSize: "7.2 MB",
+    pages: 31,
+    updatedAt: "2026-06-28",
     tags: ["Geography", "Prelims", "GS-I"],
+  },
+  {
+    slug: "gs3-disaster-management",
+    title: "GS3 Disaster Management Notes",
+    description:
+      "High-yield value addition notes for Disaster Management (GS-III Mains), featuring frameworks and NDMA guidelines.",
+    category: "pdf-notes",
+    filePath: "/pdfs/pdf-notes/GS3_Disaster_Management_Value_Addition_1.pdf",
+    fileSize: "5.4 MB",
+    pages: 58,
+    updatedAt: "2026-06-28",
+    tags: ["Disaster Management", "Mains", "GS-III"],
   },
   {
     slug: "prelims-quick-revision",

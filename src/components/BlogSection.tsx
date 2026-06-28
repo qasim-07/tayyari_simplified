@@ -1,15 +1,20 @@
 import React from "react";
+import Link from "next/link";
 
 interface BlogCardProps {
+  slug: string;
   imageSrc: string;
   category: string;
   title: string;
   footer: string;
 }
 
-function BlogCard({ imageSrc, category, title, footer }: BlogCardProps) {
+function BlogCard({ slug, imageSrc, category, title, footer }: BlogCardProps) {
   return (
-    <article className="flex flex-col space-y-3.5 group cursor-pointer">
+    <Link
+      href={`/blog/${slug}`}
+      className="flex flex-col space-y-3.5 group cursor-pointer hover:-translate-y-1 transition-all duration-300"
+    >
       {/* Image Block with hover zoom and clean rounded corners */}
       <div className="w-full aspect-square rounded-2xl overflow-hidden border border-slate-100 bg-slate-50 relative select-none">
         <img
@@ -33,25 +38,28 @@ function BlogCard({ imageSrc, category, title, footer }: BlogCardProps) {
       <span className="text-[12px] font-semibold text-brand-gray/70 block">
         {footer}
       </span>
-    </article>
+    </Link>
   );
 }
 
 export default function BlogSection() {
   const blogs: BlogCardProps[] = [
     {
+      slug: "revision-timetable",
       imageSrc: "/images/blog_alarm_clock.png",
       category: "STRATEGY",
       title: "How to Create a Revision Timetable That Works",
       footer: "May 12, 2024 • 5 min read",
     },
     {
+      slug: "most-repeated-topics",
       imageSrc: "/images/blog_archery_target.png",
       category: "PRELIMS",
       title: "10 Most Repeated Topics in UPSC Prelims",
       footer: "May 8, 2024 • 6 min read",
     },
     {
+      slug: "topper-lessons",
       imageSrc: "/images/blog_bookshelf.png",
       category: "MOTIVATION",
       title: "Lessons Every UPSC Topper Wants You to Know",
@@ -72,15 +80,15 @@ export default function BlogSection() {
           </h2>
         </div>
 
-        <a
-          href="#blog"
+        <Link
+          href="/blog"
           className="inline-flex items-center gap-1.5 text-[13px] font-extrabold text-brand-navy hover:text-brand-gold transition-brand group/link"
         >
           <span>View All Blogs</span>
           <span className="transition-transform duration-300 group-hover/link:translate-x-1">
             &rarr;
           </span>
-        </a>
+        </Link>
       </div>
 
       {/* 3-Column Articles Grid */}
