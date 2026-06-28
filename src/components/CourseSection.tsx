@@ -117,7 +117,7 @@ export default function CourseSection() {
   ];
 
   return (
-    <section className="w-full">
+    <section id="courses" className="w-full">
       {/* Course Heading Row */}
       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
         <div className="space-y-2">
