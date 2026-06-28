@@ -9,13 +9,13 @@ export interface NavLink {
 }
 
 const navLinks: NavLink[] = [
-  { label: "Home", href: "#" },
-  { label: "About Us", href: "#about" },
-  { label: "Courses", href: "#courses" },
-  { label: "Free Resources", href: "#resources" },
-  { label: "Blog", href: "#blog" },
-  { label: "Scholarship Test", href: "#scholarship" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/#about" },
+  { label: "Courses", href: "/#courses" },
+  { label: "Free Resources", href: "/resources" },
+  { label: "Blog", href: "/#blog" },
+  { label: "Scholarship Test", href: "/#scholarship" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Navbar() {
@@ -27,7 +27,7 @@ export default function Navbar() {
         <div className="flex h-20 items-center justify-between">
           {/* Logo Section */}
           <div className="flex items-center gap-3">
-            <a href="#" className="flex items-center gap-3 group focus-visible:ring-offset-4 focus-visible:ring-brand-navy rounded-lg p-1">
+            <a href="/" className="flex items-center gap-3 group focus-visible:ring-offset-4 focus-visible:ring-brand-navy rounded-lg p-1">
               {/* Circular Emblem SVG Badge */}
               <div className="relative w-12 h-12 flex items-center justify-center bg-brand-navy rounded-full shadow-md border-2 border-brand-gold group-hover:scale-105 transition-transform duration-300">
                 <svg

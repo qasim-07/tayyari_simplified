@@ -34,5 +34,6 @@ yarn-error.log*
 # portable node distribution
 /node-dist/
 
-# git temporary files
-/git
+# lead capture data (local dev)
+/data/leads.json
+

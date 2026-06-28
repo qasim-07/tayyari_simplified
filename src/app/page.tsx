@@ -60,7 +60,7 @@ export default function Home() {
                   </a>
 
                   <a
-                    href="#resources"
+                    href="/resources"
                     className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-[14px] font-bold text-brand-gold bg-white border-2 border-brand-gold/75 hover:border-brand-gold hover:bg-brand-gold/[0.04] active:scale-[0.98] transition-brand"
                   >
                     <span>Free Resources</span>

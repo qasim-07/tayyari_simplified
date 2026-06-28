@@ -60,7 +60,7 @@ export default function BlogSection() {
   ];
 
   return (
-    <section className="w-full">
+    <section id="blog" className="w-full">
       {/* Blog Heading Row */}
       <div className="flex items-end justify-between gap-4 mb-8">
         <div className="space-y-1.5">

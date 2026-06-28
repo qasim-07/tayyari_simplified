@@ -3,33 +3,33 @@ import { Instagram, Youtube, Send, Linkedin, Mail, Phone, MapPin } from "lucide-
 
 export default function Footer() {
   const quickLinks = [
-    { label: "Home", href: "#" },
-    { label: "About Us", href: "#about" },
-    { label: "Courses", href: "#courses" },
-    { label: "Free Resources", href: "#resources" },
-    { label: "Blog", href: "#blog" },
-    { label: "Scholarship Test", href: "#scholarship" },
-    { label: "Contact Us", href: "#contact" },
+    { label: "Home", href: "/" },
+    { label: "About Us", href: "/#about" },
+    { label: "Courses", href: "/#courses" },
+    { label: "Free Resources", href: "/resources" },
+    { label: "Blog", href: "/#blog" },
+    { label: "Scholarship Test", href: "/#scholarship" },
+    { label: "Contact Us", href: "/#contact" },
   ];
 
   const courses = [
-    { label: "UPSC Prelims Mastery", href: "#courses" },
-    { label: "Mains Answer Writing", href: "#courses" },
-    { label: "Essay Program", href: "#courses" },
-    { label: "Philosophy Optional", href: "#courses" },
-    { label: "Test Series", href: "#courses" },
+    { label: "UPSC Prelims Mastery", href: "/#courses" },
+    { label: "Mains Answer Writing", href: "/#courses" },
+    { label: "Essay Program", href: "/#courses" },
+    { label: "Philosophy Optional", href: "/#courses" },
+    { label: "Test Series", href: "/#courses" },
   ];
 
   const resources = [
-    { label: "PDF Notes", href: "#resources" },
-    { label: "Revision Sheets", href: "#resources" },
-    { label: "Current Affairs", href: "#resources" },
-    { label: "Mind Maps", href: "#resources" },
-    { label: "Infographics", href: "#resources" },
+    { label: "PDF Notes", href: "/resources/pdf-notes" },
+    { label: "Revision Sheets", href: "/resources/revision-sheets" },
+    { label: "Current Affairs", href: "/resources/current-affairs" },
+    { label: "Mind Maps", href: "/resources/mind-maps" },
+    { label: "Infographics", href: "/resources/infographics" },
   ];
 
   return (
-    <footer className="w-full bg-[#0a2240] text-white border-t border-slate-800/80 pt-16 pb-8 px-6 sm:px-10 lg:px-12 xl:px-16 relative overflow-hidden select-none">
+    <footer id="about" className="w-full bg-[#0a2240] text-white border-t border-slate-800/80 pt-16 pb-8 px-6 sm:px-10 lg:px-12 xl:px-16 relative overflow-hidden select-none">
       {/* Subtle background glow effect */}
       <div className="absolute top-0 left-1/4 w-[500px] h-[500px] rounded-full bg-brand-gold/[0.02] blur-3xl pointer-events-none" />
 

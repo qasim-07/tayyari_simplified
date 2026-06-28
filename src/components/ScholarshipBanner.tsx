@@ -10,7 +10,7 @@ export default function ScholarshipBanner() {
   ];
 
   return (
-    <div className="w-full flex flex-col md:flex-row gap-6 items-center justify-between bg-[#fdfaf2] rounded-3xl border border-[#f5ece0] py-9 px-5 sm:py-12 sm:px-7 relative overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+    <div id="scholarship" className="w-full flex flex-col md:flex-row gap-6 items-center justify-between bg-[#fdfaf2] rounded-3xl border border-[#f5ece0] py-9 px-5 sm:py-12 sm:px-7 relative overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
       {/* Decorative subtle glows */}
       <div className="absolute -top-32 -left-32 w-64 h-64 rounded-full bg-brand-gold/5 blur-3xl pointer-events-none" />
       <div className="absolute -bottom-32 -right-32 w-64 h-64 rounded-full bg-brand-navy/5 blur-3xl pointer-events-none" />

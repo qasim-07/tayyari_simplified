@@ -5,7 +5,7 @@ import { Mail } from "lucide-react";
 
 export default function FooterNewsletter() {
   return (
-    <div className="w-full bg-[#0a2240] text-white rounded-3xl border border-slate-800 p-6 sm:p-8 relative overflow-hidden shadow-md">
+    <div id="contact" className="w-full bg-[#0a2240] text-white rounded-3xl border border-slate-800 p-6 sm:p-8 relative overflow-hidden shadow-md">
       {/* 1. Muted Ashoka Chakra background watermark in the right corner */}
       <div className="absolute top-1/2 -right-24 sm:-right-20 lg:-right-16 -translate-y-1/2 w-[240px] sm:w-[280px] md:w-[320px] aspect-square text-white/[0.03] pointer-events-none select-none z-0">
         <svg
